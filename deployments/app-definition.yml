@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hstudio-prod
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        type: BE
+    spec:
+      containers:
+      - name: nginx-controller
+        image: nginx
+  selector:
+    matchLabels:
+      type: BE
