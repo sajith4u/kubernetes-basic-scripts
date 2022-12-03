@@ -1,18 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: tech-prod-2
+  name: techtalk
 spec:
-  replicas: 3
+  replicas: 1
   template:
     metadata:
       labels:
         type: estabild
     spec:
       containers:
-      - name: estabild-container
+      - name: techtalk-react-container
         image: estabild/techtalk-app:v1
         imagePullPolicy: Never
+        ports:
+        - containerPort: 80
   selector:
     matchLabels:
       type: estabild

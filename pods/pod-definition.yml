@@ -8,4 +8,4 @@ metadata:
 spec:
   containers:
     - name: my-nginx-container
-      image: nginx
+      image: estabild/techtalk-app:v2

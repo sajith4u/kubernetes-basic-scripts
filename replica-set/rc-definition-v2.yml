@@ -10,7 +10,8 @@ spec:
       metadata:
         name: my-prod
         labels:
-          app: sample
+          app: estabild
+          type: BE
       spec:
         containers:
           - name: my-nginx-container
@@ -18,5 +19,5 @@ spec:
   replicas: 4
   selector: 
     matchLabels:
-      app: sample
+      app: estabild
     
