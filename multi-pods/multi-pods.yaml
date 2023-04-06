@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: demo-app
+  labels:
+    app: myapp
+    type: BE
+spec:
+  containers:
+    - name: my-box
+      image: busybox
+    - name: hello
+      image: hello-world

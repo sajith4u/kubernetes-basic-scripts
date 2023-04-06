@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: my-nginx-app
+  name: my-box
   labels:
-    app: myapp
+    app: mybox
     type: BE
 spec:
   containers:
-    - name: my-nginx-container
-      image: estabild/techtalk-app:v2
+    - name: my-busy-box
+      image: busybox:latest
